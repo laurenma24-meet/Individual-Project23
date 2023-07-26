@@ -17,7 +17,6 @@ body {
 }
 
 .container_2{
-  background-color:white;
   border-raduis:8px;
   padding:20px;
   width:500px;
@@ -35,6 +34,7 @@ body {
   color: #E91E63;
 
 }
+
 
 
 form {
@@ -106,12 +106,11 @@ a button:hover {
 .form-container {
   display: flex;
   align-items: center;
-  background-image: url("path/to/pink_clouds.jpg"); /* Replace "path/to/pink_clouds.jpg" with the actual path to your pink cloud image */
   background-size: cover;
   border: 2px solid transparent;
   border-radius: 20px;
   padding: 10px;
-  max-width: 300px; /* Adjust the maximum width as per your design */
+  max-width: 300px; 
 }
 
 
@@ -171,7 +170,7 @@ a button:hover {
 }
 
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #c91a5a;
@@ -181,13 +180,13 @@ a button:hover {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #e6296e;
   color: black;
 }
 
-/* Add a color to the active/current link */
+
 .topnav a.active {
   background-color: grey;
   color: white;

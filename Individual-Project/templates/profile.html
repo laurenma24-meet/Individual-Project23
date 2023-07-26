@@ -10,10 +10,10 @@
   width: 800px;
   height: 600px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -23,34 +23,33 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
+
 .flip-card-front {
-  background-color: pink;
+  background-color: #e91e63;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back {
-  background-color: lightpink;
+  background-color: #e91e63;
   color: white;
   transform: rotateY(180deg);
 }
 .container_3 {
-	background-color:#f2bdd0;
+	background-color:#e91e63;
   border-raduis:8px;
   padding:20px;
   width:300px;
@@ -73,6 +72,7 @@
         <div class="flip-card-back">
      <div class="container_3">
 
+
      <center>
     <form onsubmit="return updateProfile(event)">
       <label for="name">Name:</label>
@@ -93,7 +93,7 @@
       </div>
     </div>
   </center>
-
+<a href="/add_task"><button >Go Back</button></a>
   <script>
     function updateProfile(event) {
       event.preventDefault();

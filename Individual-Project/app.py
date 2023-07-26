@@ -79,7 +79,7 @@ def signin():
 #task page
 @app.route('/task')
 def task():
-    return render_template('/task.html')
+    return render_template('task.html')
 
 
 
