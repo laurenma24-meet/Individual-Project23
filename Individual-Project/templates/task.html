@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task List</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+  <style>
+    .profile-photo-container {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  
+<div class="topnav">
+  <a class="active" href='/'>Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="task-list">
+<div>
+    <center><h3>Task List</h3></center>
+    
+
+<!-- ... -->
+<button type="submit" class="profile-photo-container">
+  <a href="/profile"><img src="{{url_for('static' ,filename='photos//profilephoto.png')}}" height="50px" width="50px" alt="buttonpng" /></a>
+</button>
+<!-- ... -->
+
+</div>
+  </div>
+</div>
+    <center>
+<div class="container_2">
+    <hr></hr>
+    <br></br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" action="/add_task">
+      <label for="task_name">Enter your task:</label>
+      <input type="text" name="task_name" id="task_name">
+      <br>
+      <button type="submit" id="submit_task">Add Task</button>
+    <br></br>
+</form>
+    <ul>
+      {% for task_id, task in tasks.items() %}
+      <li>{{ task.name }} <a href="/remove_task/{{ task_id }}">DONE</a></li>
+      {% endfor %}
+    </ul>
+</div>
+</body>
+
+</html>

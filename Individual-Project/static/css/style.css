@@ -1,0 +1,195 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.center{
+  displat:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container{
+  background-color:#f2bdd0;
+  border-raduis:8px;
+  padding:20px;
+  width:300px;
+}
+
+.container_2{
+  background-color:white;
+  border-raduis:8px;
+  padding:20px;
+  width:500px;
+}
+
+
+#task_name{
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: .2em solid #E91E63;
+  background: rgba(#E91E63, .2);
+  border-radius: .2em .2em 0 0;
+  padding: .4em;
+  color: #E91E63;
+
+}
+
+
+form {
+display: flex;
+flex-direction:column;
+}
+
+form div{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:10px;
+}
+
+label{
+  font-weighht:bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding:10px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-size:16px;
+  box-sizing:border-box;
+  width:100%;
+}
+
+input[type="submit"] {
+  padding:10px 20px;
+  background-color:#6e1f41;
+  color:#fff;
+  border:none;
+  border-radius:4px;
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+  cursor:pointer;
+  font-size:16px;
+  transition:background-color 0.3s;
+}
+
+
+input[type="submit"]:hover{
+  background-color: #0056b3;
+  cursor: pointer;
+  transform: scale(1.25);
+  background: #FFF;
+  color: #000;
+  transform: scale(1.1);
+        
+}
+
+a button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color:#fff;
+  border:none;
+  border-radius: 4px;
+  cursor:pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a button:hover {
+  background-color: #1a682;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  background-image: url("path/to/pink_clouds.jpg"); /* Replace "path/to/pink_clouds.jpg" with the actual path to your pink cloud image */
+  background-size: cover;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 300px; /* Adjust the maximum width as per your design */
+}
+
+
+
+
+#submit_task{
+  appearance: none;
+  border: .2em solid #E91E63;
+  background: hsl(0 0 0/0);
+  padding: .85em 1.5em;
+  color: #E91E63;
+  border-radius: 2em;
+  transition: 1s;
+  margin-left: 10px; 
+  font-size: 14px;
+
+}
+
+#task_name{
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: .2em solid #E91E63;
+  background: rgba(#E91E63, .2);
+  border-radius: .2em .2em 0 0;
+  padding: .4em;
+  color: #E91E63;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.task-list {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.task-list h3 {
+  margin: 0;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #c91a5a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e6296e;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}*/
+
