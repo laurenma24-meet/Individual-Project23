@@ -115,16 +115,6 @@ def profile():
     return render_template("profile.html")
 
 
-# @app.route('/profile', methods=['GET', 'POST'])
-# def make_profile():
-#     error = ""
-#     if request.method == 'POST':
-#         email = request.form['email']
-#         password = request.form['password']
-#         fullname=request.form['fullname']
-#         username=request.form['username']
-#         bio=request.form['bio']
-#     return render_template('/profile')
 
 if __name__ == '__main__':
     app.run(debug=True)
